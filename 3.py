@@ -26,7 +26,9 @@ for i in range(1, T+1):
         S[0] = S[min_index]
         S[min_index] = temp
 
-        d = S.pop(0)
+        # d = S.pop(0)
+        d = S[0:1][0]
+        S = S[1:]
 
         l = l + 1
 
